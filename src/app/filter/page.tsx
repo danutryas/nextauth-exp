@@ -13,34 +13,44 @@ import {
 } from "next/navigation";
 import { useEffect, useState } from "react";
 
+const menu = [
+  {
+    id: 1,
+    menu: "a",
+  },
+  {
+    id: 2,
+    menu: "b",
+  },
+  {
+    id: 3,
+    menu: "c",
+  },
+];
+
 const FilterPage = () => {
+  const [loading, setLoading] = useState(false);
+
   const router = useRouter();
   const pathname = usePathname();
-
   const params = useSearchParams();
 
-  const [selected, setSelected] = useState<{ [key: string]: Filter }>({
-    name: {
-      id: 0,
-      menu: "Danu",
-    },
-    midName: {
-      id: 1,
-      menu: "Tryas",
-    },
-    lastName: {
-      id: 2,
-      menu: "Pristowo",
-    },
+  const [selected, setSelected] = useState<{ [key: string]: Filter | null }>({
+    name: null,
+    midName: null,
+    lastName: null,
   });
 
   const onSelect = () => {
-    const params: { [key: string]: any } = {};
-    Object.keys(selected).forEach((key) => {
-      params[key] = selected[key].menu;
-    });
+    // const loc = pathname + createParams(selected);
+    // window.location.href = loc;
+  };
 
-    router.push(pathname + createParams(params));
+  const onChangeInput = (e: any) => {
+    setSelected((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   useEffect(() => {
@@ -48,9 +58,34 @@ const FilterPage = () => {
     if (name) console.log(name);
   }, []);
 
+  const setValue = (key: string, value: Filter) => {
+    setSelected((prev) => ({ ...prev, [key]: value }));
+  };
+
+  useEffect(() => {
+    console.log(selected);
+  }, [selected]);
+
   return (
-    <div className="">
-      {/* <Dropdown selected={selected} setSelected={setSelected} /> */}
+    <div>
+      <Dropdown
+        selected={selected.name}
+        setSelected={setValue}
+        name="name"
+        menu={menu}
+      />
+      <Dropdown
+        selected={selected.midName}
+        setSelected={setValue}
+        name="midName"
+        menu={menu}
+      />
+      <input
+        type="text"
+        name="lastName"
+        id=""
+        onChange={(e) => onChangeInput(e)}
+      />
       <Button onClick={onSelect}>search</Button>
     </div>
   );

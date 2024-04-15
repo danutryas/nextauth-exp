@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Session } from "inspector";
 import { SessionProvider } from "next-auth/react";
+import TanStackQueryProvider from "@/context/TanStackQueryContext";
+import ContextProvider from "@/context";
+import Header from "@/components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,15 +21,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="bg-gray-900 min-h-screen">
-          <div className="container mx-auto py-8 px-4">
-            <div className="bg-gray-600 rounded-lg ">
-              <div className="px-10 py-8">{children}</div>
+      <ContextProvider>
+        <body className={inter.className}>
+          <div className="bg-gray-900 min-h-screen">
+            <div className="container mx-auto py-8 px-4">
+              <div className="bg-gray-600 rounded-lg px-10 py-8">
+                <Header />
+              </div>
+            </div>
+            <div className="container mx-auto py-8 px-4">
+              <div className="bg-gray-600 rounded-lg px-10 py-8">
+                {children}
+              </div>
             </div>
           </div>
-        </div>
-      </body>
+        </body>
+      </ContextProvider>
     </html>
   );
 }

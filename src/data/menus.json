@@ -1,0 +1,34 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "category": "Account"
+    },
+    {
+      "id": 2,
+      "category": "Development"
+    },
+    {
+      "id": 3,
+      "category": "Testing"
+    },
+    {
+      "id": 4,
+      "category": "Production"
+    }
+  ],
+  "products": [
+    {
+      "id": 3,
+      "title": "Direct Debit"
+    },
+    {
+      "id": 1,
+      "title": "Virtual Account"
+    },
+    {
+      "id": 2,
+      "title": "QRIS"
+    }
+  ]
+}

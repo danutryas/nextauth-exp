@@ -1,0 +1,225 @@
+{
+  "05/04/2024": [
+    {
+      "inboxId": 50,
+      "metaId": 3,
+      "categoryId": 1,
+      "logo": null,
+      "description": "PT Bank Neo Commerce has successfully enrolled a new user!",
+      "date": "05/04/2024",
+      "time": "12:08",
+      "createdAt": 1712293708627,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 3,
+        "isFirstRegister": false,
+        "fkUserId": 1,
+        "fkInboxId": 50,
+        "createdAt": 1712293708627,
+        "isApproved": true
+      }
+    },
+    {
+      "inboxId": 49,
+      "metaId": 2,
+      "categoryId": 1,
+      "logo": null,
+      "description": "PT Bank Neo Commerce has successfully enrolled a new user!",
+      "date": "05/04/2024",
+      "time": "12:08",
+      "createdAt": 1712293685853,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 2,
+        "isFirstRegister": false,
+        "fkUserId": 1,
+        "fkInboxId": 49,
+        "createdAt": 1712293685853,
+        "isApproved": true
+      }
+    },
+    {
+      "inboxId": 48,
+      "metaId": 1,
+      "categoryId": 1,
+      "logo": null,
+      "description": "PT Bank Neo Commerce has successfully enrolled a new user!",
+      "date": "05/04/2024",
+      "time": "12:06",
+      "createdAt": 1712293602921,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 1,
+        "isFirstRegister": false,
+        "fkUserId": 1,
+        "fkInboxId": 48,
+        "createdAt": 1712293602921,
+        "isApproved": false
+      }
+    },
+    {
+      "inboxId": 46,
+      "metaId": 9,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT Bank Neo Commerce has successfully submitted URL & key development!",
+      "date": "05/04/2024",
+      "time": "11:25",
+      "createdAt": 1712291148727,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 9,
+        "fkApplicationId": 1,
+        "fkInboxId": 46,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712291148727
+      }
+    },
+    {
+      "inboxId": 45,
+      "metaId": 8,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT Bank Neo Commerce has successfully submitted URL & key development!",
+      "date": "05/04/2024",
+      "time": "11:17",
+      "createdAt": 1712290679879,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 8,
+        "fkApplicationId": 1,
+        "fkInboxId": 45,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712290679879
+      }
+    },
+    {
+      "inboxId": 43,
+      "metaId": 7,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT Bank Neo Commerce has successfully submitted URL & key development!",
+      "date": "05/04/2024",
+      "time": "10:32",
+      "createdAt": 1712287927472,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 7,
+        "fkApplicationId": 1,
+        "fkInboxId": 43,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712287927472
+      }
+    },
+    {
+      "inboxId": 42,
+      "metaId": 6,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT Bank Neo Commerce has successfully submitted URL & key development!",
+      "date": "05/04/2024",
+      "time": "10:31",
+      "createdAt": 1712287885164,
+      "isAlreadyRead": true,
+      "meta": {
+        "id": 6,
+        "fkApplicationId": 1,
+        "fkInboxId": 42,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712287885164
+      }
+    },
+    {
+      "inboxId": 38,
+      "metaId": 5,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT blablabla has successfully submit URL key",
+      "date": "05/04/2024",
+      "time": "10:15",
+      "createdAt": 1712286957028,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 5,
+        "fkApplicationId": 1,
+        "fkInboxId": 38,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712286957028
+      }
+    },
+    {
+      "inboxId": 37,
+      "metaId": 4,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT blablabla has successfully submit URL key",
+      "date": "05/04/2024",
+      "time": "10:14",
+      "createdAt": 1712286868773,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 4,
+        "fkApplicationId": 1,
+        "fkInboxId": 37,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712286868773
+      }
+    },
+    {
+      "inboxId": 36,
+      "metaId": 3,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT blablabla has successfully submit URL key",
+      "date": "05/04/2024",
+      "time": "10:12",
+      "createdAt": 1712286778736,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 3,
+        "fkApplicationId": 1,
+        "fkInboxId": 36,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712286778736
+      }
+    },
+    {
+      "inboxId": 35,
+      "metaId": 2,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT blablabla has successfully submit URL key",
+      "date": "05/04/2024",
+      "time": "10:06",
+      "createdAt": 1712286399622,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 2,
+        "fkApplicationId": 1,
+        "fkInboxId": 35,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712286399622
+      }
+    }
+  ],
+  "04/04/2024": [
+    {
+      "inboxId": 4,
+      "metaId": 1,
+      "categoryId": 2,
+      "logo": null,
+      "description": "PT blablabla has successfully submit URL key",
+      "date": "04/04/2024",
+      "time": "12:11",
+      "createdAt": 1712207503110,
+      "isAlreadyRead": false,
+      "meta": {
+        "id": 1,
+        "fkApplicationId": 1,
+        "fkInboxId": 4,
+        "fkApplicationDevelopmentEnvId": 2,
+        "createdAt": 1712207503110
+      }
+    }
+  ]
+}
