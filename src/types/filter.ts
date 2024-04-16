@@ -1,5 +1,5 @@
 export interface Filters {
-  [key: string]: Filter | null | string;
+  [key: string]: Filter[] | Filter | null | string;
 }
 
 export interface Filter {

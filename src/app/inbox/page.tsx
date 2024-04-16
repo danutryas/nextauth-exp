@@ -21,7 +21,10 @@ const SessionHandlingPage = () => {
   const pathname = usePathname();
   const params = useSearchParams();
 
-  const setSelectedValue = (key: string, value: Filter | string | null) => {
+  const setSelectedValue = (
+    key: string,
+    value: Filter[] | Filter | string | null
+  ) => {
     setSelected((prev) => ({ ...prev, [key]: value }));
   };
 
@@ -30,23 +33,19 @@ const SessionHandlingPage = () => {
     const keyword = getParams(params, "keyword");
 
     const cat = sessionStorage.getItem("categories");
+    let selectedCategory: Filter | null = null;
 
     if (cat) {
       const parsedData = JSON.parse(cat);
       setCategory(parsedData);
 
-      if (keyword) {
-        setFilteredData(filterData(dataSrc, null, keyword));
-        setSelectedValue("keyword", keyword);
-      }
-
       let filteredDataSrc = dataSrc;
       if (category) {
-        const objectData: Filter = parsedData.filter(
+        selectedCategory = parsedData.filter(
           (data: Filter) => data.menu === category
-        )[0];
-        setSelectedValue("category", objectData);
-        filteredDataSrc = filterData(dataSrc, objectData.id, keyword);
+        )[0] as Filter;
+        setSelectedValue("category", selectedCategory);
+        filteredDataSrc = filterData(dataSrc, selectedCategory.id, keyword);
       }
       setFilteredData(filterData(filteredDataSrc, null, keyword));
     } else {
@@ -60,6 +59,11 @@ const SessionHandlingPage = () => {
       sessionStorage.setItem("categories", JSON.stringify(transformedData));
 
       setFilteredData(filterData(dataSrc, null, keyword));
+    }
+
+    if (keyword) {
+      setFilteredData(filterData(dataSrc, null, keyword));
+      setSelectedValue("keyword", keyword);
     }
   }, []);
 
